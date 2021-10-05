@@ -11,23 +11,23 @@ window.bgcolor('black')
 window.setup(width=800, height=600)
 
 # this is the right padle
-rightPable = titi.Turtle()
-rightPable.speed(0)
-rightPable.shape('square')
-rightPable.color('white')
-rightPable.shapesize(stretch_wid=5, stretch_len=1)
-rightPable.penup()
-rightPable.goto(350, 0)
+rightPaddle = titi.Turtle()
+rightPaddle.speed(0)
+rightPaddle.shape('square')
+rightPaddle.color('white')
+rightPaddle.shapesize(stretch_wid=5, stretch_len=1)
+rightPaddle.penup()
+rightPaddle.goto(350, 0)
 
 
 # this is the left padle
-leftPable = titi.Turtle()
-leftPable.speed(0)
-leftPable.shape('square')
-leftPable.color('white')
-leftPable.shapesize(stretch_wid=5, stretch_len=1)
-leftPable.penup()
-leftPable.goto(-350, 0)
+leftPaddle = titi.Turtle()
+leftPaddle.speed(0)
+leftPaddle.shape('square')
+leftPaddle.color('white')
+leftPaddle.shapesize(stretch_wid=5, stretch_len=1)
+leftPaddle.penup()
+leftPaddle.goto(-350, 0)
 
 # This is the ball
 
@@ -39,7 +39,7 @@ ball.penup()
 ball.goto(5,5)
 
 # This will be to change the ball position on the screen
-ballXDitction = 0.4
+ballXDirection = 0.4
 ballYDirection = 0.4
 
 # This is the pen to write the score
@@ -54,24 +54,24 @@ pen.write("score", align="center", font=('Ariel', 24, 'normal'))
 
 # Functions to move the paddles up and down
 def moveRightPadleUp():
-    y = rightPable.ycor()
+    y = rightPaddle.ycor()
     y = y+90
-    rightPable.sety(y)
+    rightPaddle.sety(y)
 
 def moveRightPadleDown():
-    y = rightPable.ycor()
+    y = rightPaddle.ycor()
     y = y-90
-    rightPable.sety(y)
+    rightPaddle.sety(y)
 
 def moveLeftPadleUp():
-    y = leftPable.ycor()
+    y = leftPaddle.ycor()
     y = y+90
-    rightPable.sety(y)
+    rightPaddle.sety(y)
 
 def moveLeftPadleDown():
-    y = leftPable.ycor()
+    y = leftPaddle.ycor()
     y = y+90
-    leftPable.sety(y)
+    leftPaddle.sety(y)
 
 
 
