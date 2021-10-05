@@ -52,6 +52,28 @@ pen.goto(0, 260)
 pen.write("score", align="center", font=('Ariel', 24, 'normal'))
 
 
+# Functions to move the paddles up and down
+def moveRightPadleUp():
+    y = rightPable.ycor()
+    y = y+90
+    rightPable.sety(y)
+
+def moveRightPadleDown():
+    y = rightPable.ycor()
+    y = y-90
+    rightPable.sety(y)
+
+def moveLeftPadleUp():
+    y = leftPable.ycor()
+    y = y+90
+    rightPable.sety(y)
+
+def moveLeftPadleDown():
+    y = leftPable.ycor()
+    y = y+90
+    leftPable.sety(y)
+
+
 
 
 
