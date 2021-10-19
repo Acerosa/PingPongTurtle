@@ -1,3 +1,4 @@
+import turtle
 import  turtle as titi
 
 # For the score
@@ -66,12 +67,25 @@ def moveRightPadleDown():
 def moveLeftPadleUp():
     y = leftPaddle.ycor()
     y = y+90
-    rightPaddle.sety(y)
+    leftPaddle.sety(y)
 
 def moveLeftPadleDown():
     y = leftPaddle.ycor()
-    y = y+90
+    y = y-90
     leftPaddle.sety(y)
+
+window.listen()
+
+window.onkey(moveLeftPadleUp, 'w')
+window.onkey(moveLeftPadleDown,'s')
+window.onkey(moveRightPadleUp, 'Up')
+window.onkey(moveRightPadleDown, 'Down')
+
+
+
+turtle.exitonclick()
+
+
 
 
 
